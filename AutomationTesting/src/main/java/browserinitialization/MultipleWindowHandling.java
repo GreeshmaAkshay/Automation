@@ -35,9 +35,33 @@ public class MultipleWindowHandling{
 				WebElement username = driver.findElement(By.xpath("//input[@type='text']"));
 				username.sendKeys("Greeshma");
 			}
+			if(title.equals("WebDriver | Login Portal")) {
+				WebElement password = driver.findElement(By.xpath("//input[@type='password']"));
+				password.sendKeys("innukarthi@1234");
+			}
+			if(title.equals("WebDriver | Login Portal")) {
+				WebElement button = driver.findElement(By.id("login-button"));
+				button.click();
+			}
 			if(title.equals("WebDriver | Contact Us")){
 				WebElement firstname = driver.findElement(By.xpath("//input[@name='first_name']"));
 				firstname.sendKeys("Greeshma GB");
+			}
+			if(title.equals("WebDriver | Contact Us")){
+				WebElement lastname = driver.findElement(By.xpath("//input[@name='last_name']"));
+				lastname.sendKeys("Greeshma Akshay");
+			}
+			if(title.equals("WebDriver | Contact Us")){
+				WebElement email = driver.findElement(By.xpath("//input[@name='email']"));
+				email.sendKeys("greeshmagbparu@gmail.com");
+			}
+			if(title.equals("WebDriver | Contact Us")){
+				WebElement message = driver.findElement(By.xpath("//textarea[@name='message']"));
+				message.sendKeys("Hi Greeshma");
+			}
+			if(title.equals("WebDriver | Contact Us")){
+				WebElement submit = driver.findElement(By.xpath("//input[@type='submit']"));
+				submit.click();
 			}
 		}
 	}

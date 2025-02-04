@@ -26,7 +26,6 @@ public class Base {
 		driver.close();
 		driver.quit();
 	}
-	//System.out.println();
 
 	public static void main(String[] args) {
 		Base base = new Base();
